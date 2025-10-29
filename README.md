@@ -8,6 +8,10 @@
 
 Because writing documentation is hard. Writing _good_ documentation is harder. MCP is moving fast and there is always another tool or changes in how you do it. This repository is a collection of instructions for various tools with MCP support. You can use it to generate instructions for your own tool or use it as a reference for your own documentation. It's open source so we can work together to keep it up to date with the latest changes in MCP.
 
+## Example
+
+<img src="./example.png" alt="Example of the instructions" />
+
 ## 🚀 Features
 
 - 📝 **Pre-written instructions** for popular tools with MCP support
