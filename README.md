@@ -116,52 +116,6 @@ Each configuration includes:
 | ⚡ Cursor         | ✅ Supported | ✅                |
 | 🆚 VS Code        | ✅ Supported | ❌                |
 
-## 🧪 Development
-
-### Running Tests
-
-We've got tests for days! 🎯
-
-```bash
-# Run tests once
-npm test
-
-# Watch mode (for the TDD enthusiasts)
-npm run test:watch
-
-# Fancy UI mode (because CLIs are so 2010)
-npm run test:ui
-
-# Coverage report (for the perfectionists)
-npm run test:coverage
-```
-
-### Building
-
-```bash
-npm run build
-```
-
-### Dev Mode
-
-```bash
-npm run dev
-```
-
-We figured, why not turn those instructions into code? Now you can:
-
-1. **Generate instructions dynamically** based on your server details
-2. **Keep instructions up-to-date** in one place
-3. **Programmatically display** them in your UI, docs, or CLI
-4. **Sleep better at night** knowing your users can actually connect to your server
-
-## 🎨 Use Cases
-
-- **Documentation sites**: Generate installation instructions dynamically
-- **CLI tools**: Display setup instructions when users run your tool
-- **Admin dashboards**: Show connection guides to end users
-- **Onboarding flows**: Step-by-step wizards for new users
-
 ## 💡 Want to Add More Platforms?
 
 PRs are welcome! If there's another AI assistant or IDE that supports MCP servers, we'd love to add instructions for it.
