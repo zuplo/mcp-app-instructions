@@ -1,0 +1,3931 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`McpInstructions > renders correctly with HTTPS URL and path 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      Production API
+    </strong>
+     at 
+    <code>
+      https://api.production.example.com/v1/mcp/server
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=Production API&config=eyJ1cmwiOiJodHRwczovL2FwaS5wcm9kdWN0aW9uLmV4YW1wbGUuY29tL3YxL21jcC9zZXJ2ZXIifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "Production API": {
+      "url": "https://api.production.example.com/v1/mcp/server"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "Production API": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.production.example.com/v1/mcp/server"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with URL containing hyphens and underscores 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      My-Server_Name
+    </strong>
+     at 
+    <code>
+      https://my-api-server.example.com/mcp_endpoint
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=My-Server_Name&config=eyJ1cmwiOiJodHRwczovL215LWFwaS1zZXJ2ZXIuZXhhbXBsZS5jb20vbWNwX2VuZHBvaW50In0="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "My-Server_Name": {
+      "url": "https://my-api-server.example.com/mcp_endpoint"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "My-Server_Name": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://my-api-server.example.com/mcp_endpoint"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with URL containing port 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      Local Dev Server
+    </strong>
+     at 
+    <code>
+      http://localhost:8080/mcp
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=Local Dev Server&config=eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvbWNwIn0="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "Local Dev Server": {
+      "url": "http://localhost:8080/mcp"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "Local Dev Server": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:8080/mcp"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with default props 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      Test MCP Server
+    </strong>
+     at 
+    <code>
+      https://api.example.com/mcp
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=Test MCP Server&config=eyJ1cmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS9tY3AifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "Test MCP Server": {
+      "url": "https://api.example.com/mcp"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "Test MCP Server": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.example.com/mcp"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with emoji in name 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      🚀 Rocket API
+    </strong>
+     at 
+    <code>
+      https://api.example.com/mcp
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=🚀 Rocket API&config=eyJ1cmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS9tY3AifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "🚀 Rocket API": {
+      "url": "https://api.example.com/mcp"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "🚀 Rocket API": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.example.com/mcp"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with long server name 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      My Very Long Server Name With Multiple Words
+    </strong>
+     at 
+    <code>
+      https://api.example.com/mcp/v2/endpoint
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=My Very Long Server Name With Multiple Words&config=eyJ1cmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS9tY3AvdjIvZW5kcG9pbnQifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "My Very Long Server Name With Multiple Words": {
+      "url": "https://api.example.com/mcp/v2/endpoint"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "My Very Long Server Name With Multiple Words": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.example.com/mcp/v2/endpoint"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with minimal name and localhost URL 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      API
+    </strong>
+     at 
+    <code>
+      http://localhost:3000
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=API&config=eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjMwMDAifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "API": {
+      "url": "http://localhost:3000"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "API": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:3000"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with numeric characters in name 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      API-V2
+    </strong>
+     at 
+    <code>
+      https://api.example.com/v2/mcp
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=API-V2&config=eyJ1cmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS92Mi9tY3AifQ=="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "API-V2": {
+      "url": "https://api.example.com/v2/mcp"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "API-V2": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.example.com/v2/mcp"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with single character name 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      X
+    </strong>
+     at 
+    <code>
+      https://x.com/mcp
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=X&config=eyJ1cmwiOiJodHRwczovL3guY29tL21jcCJ9"
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "X": {
+      "url": "https://x.com/mcp"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "X": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://x.com/mcp"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`McpInstructions > renders correctly with special characters in name and URL 1`] = `
+<div
+  class="mcp-instructions"
+>
+  <h1>
+    MCP Server Setup Instructions
+  </h1>
+  <p
+    class="subtitle"
+  >
+    Connect to 
+    <strong>
+      My & Company's &lt;Special&gt; API
+    </strong>
+     at 
+    <code>
+      https://api.example.com/v1/mcp?key=test&value=123
+    </code>
+  </p>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Claude
+    </h2>
+    <p
+      class="description"
+    >
+      OpenAI is a cloud-based AI platform that provides a range of AI services, including natural language processing, machine learning, and computer vision.
+    </p>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://openai.com/api-docs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Open Claude Desktop and click Settings in the lower corner
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                main.ts
+              </span>
+              <span
+                class="file-language"
+              >
+                typescript
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-typescript"
+              >
+                import { OpenAI } from "openai";
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Navigate to *Developer* tab → *Edit Config*
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Add this configuration to 
+          <code>
+            claude_desktop_config.json
+          </code>
+          :
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save the file and restart Claude Desktop. Look for the 🔨 icon in the bottom-right corner.
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      ChatGPT
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://help.openai.com/en/articles/11487775-connectors-in-chatgpt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="hint hint-info"
+      role="alert"
+    >
+      <strong
+        class="hint-title"
+      >
+        Requirements
+        : 
+      </strong>
+      <span
+        class="hint-text"
+      >
+        ChatGPT Pro, Team, Enterprise, or Edu subscription. Note: MCP support is limited to read-only operations through Deep Research.
+      </span>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Go to Settings → Connectors → Connect
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Click Custom and add your MCP URL: 
+          <code>
+            https://api.cosmocargo.space/ai/v1/mcp
+          </code>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Provide a name and description for your connector
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Save and enable the connector. Users must authenticate with the connector before first use.
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Access through Deep Research in your chat interface
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      Cursor
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://docs.cursor.com/en/context/mcp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <div
+      class="install-deeplink"
+    >
+      <a
+        href="cursor://anysphere.cursor-deeplink/mcp/install?name=My & Company's <Special> API&config=eyJ1cmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS92MS9tY3A/a2V5PXRlc3QmdmFsdWU9MTIzIn0="
+      >
+        Install MCP in Cursor
+      </a>
+    </div>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create or edit:
+          <code>
+             ~/.cursor/mcp.json
+          </code>
+           (global) or 
+          <code>
+            .cursor/mcp.json
+          </code>
+           (project)
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "mcpServers": {
+    "My & Company's &lt;Special&gt; API": {
+      "url": "https://api.example.com/v1/mcp?key=test&value=123"
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart Cursor to apply the configuration
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="mcp-config"
+  >
+    <h2>
+      VS Code
+    </h2>
+    <p
+      class="docs-link"
+    >
+      <a
+        href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Official Documentation →
+      </a>
+    </p>
+    <ol
+      class="steps"
+    >
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Create .vscode/mcp.json in your workspace (or user-level mcp.json):
+        </div>
+        <div
+          class="files"
+        >
+          <div
+            class="file"
+          >
+            <div
+              class="file-header"
+            >
+              <span
+                class="file-name"
+              >
+                mcp.json
+              </span>
+              <span
+                class="file-language"
+              >
+                json
+              </span>
+            </div>
+            <pre
+              class="file-content"
+            >
+              <code
+                class="language-json"
+              >
+                {
+  "servers": {
+    "My & Company's &lt;Special&gt; API": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.example.com/v1/mcp?key=test&value=123"
+      ]
+    }
+  }
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Restart VS Code to apply the configuration
+        </div>
+      </li>
+      <li
+        class="step"
+      >
+        <div
+          class="step-text"
+        >
+          Use MCP tools in GitHub Copilot Chat by selecting Agent mode
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+`;

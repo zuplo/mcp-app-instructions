@@ -1,0 +1,167 @@
+# 🔌 MCP App Instructions
+
+## 🌟 What Is This?
+
+`mcp-app-instructions` is a TypeScript library that generates step-by-step installation instructions for connecting various tools with MCP support to your MCP server. Whether your users are rocking Claude Desktop, ChatGPT, Cursor, or VS Code, we've got them covered.
+
+## 🤔 Why Does This Exist?
+
+Because writing documentation is hard. Writing _good_ documentation is harder. MCP is moving fast and there is always another tool or changes in how you do it. This repository is a collection of instructions for various tools with MCP support. You can use it to generate instructions for your own tool or use it as a reference for your own documentation. It's open source so we can work together to keep it up to date with the latest changes in MCP.
+
+## 🚀 Features
+
+- 📝 **Pre-written instructions** for popular tools with MCP support
+- 🎨 **Dynamic configuration generation** with your server details
+- 🔗 **Deep links** for one-click installation (where supported)
+- 💡 **Helpful hints** and warnings for special requirements
+- 📦 **Code snippets** ready to copy-paste
+- ✨ **Type-safe** because we're not monsters
+
+## 📦 Installation
+
+```bash
+npm install mcp-app-instructions
+```
+
+Or if you're fancy:
+
+```bash
+pnpm add mcp-app-instructions
+# yarn add mcp-app-instructions
+# bun add mcp-app-instructions
+```
+
+## 🎯 Usage
+
+### Basic Usage (TypeScript/JavaScript)
+
+```typescript
+import { getMcpServerInstructions } from "mcp-app-instructions";
+
+const instructions = getMcpServerInstructions({
+  name: "MyAwesomeMCP",
+  url: "https://api.myserver.com/mcp",
+});
+
+// Returns an array of configurations for:
+// - Claude Desktop
+// - ChatGPT
+// - Cursor
+// - VS Code
+
+console.log(instructions);
+```
+
+### React Component
+
+We've also got a React component that renders the instructions with a nice UI:
+
+```tsx
+import { McpInstructions } from "mcp-app-instructions";
+
+function MyApp() {
+  return (
+    <McpInstructions name="MyAwesomeMCP" url="https://api.myserver.com/mcp" />
+  );
+}
+```
+
+The component displays:
+
+- ✅ All platform instructions in an organized layout
+- 📋 Formatted code snippets with syntax highlighting hints
+- 🔗 Official documentation links
+- ⚠️ Important hints and requirements
+- 🎯 Deep links for one-click installation (where available)
+
+### What You Get Back
+
+Each configuration includes:
+
+```typescript
+{
+  name: string;                    // e.g., "Claude", "Cursor"
+  description?: string;            // Optional description
+  officialDocsLink: string;        // Link to official docs
+  installDeepLink?: {              // One-click install (if supported)
+    link: string;
+    label: string;
+  };
+  hint?: {                         // Important notes or warnings
+    type: "info" | "warning";
+    title?: string;
+    text: string;
+  };
+  steps?: {                        // Installation steps
+    text: string;
+    files?: {                      // Config files to create
+      name: string;
+      content: string;
+      language: "json" | "typescript";
+    }[];
+  }[];
+}
+```
+
+## 🎪 Supported Platforms
+
+| Platform          | Status       | One-Click Install |
+| ----------------- | ------------ | ----------------- |
+| 🤖 Claude Desktop | ✅ Supported | ❌                |
+| 💬 ChatGPT        | ✅ Supported | ❌                |
+| ⚡ Cursor         | ✅ Supported | ✅                |
+| 🆚 VS Code        | ✅ Supported | ❌                |
+
+## 🧪 Development
+
+### Running Tests
+
+We've got tests for days! 🎯
+
+```bash
+# Run tests once
+npm test
+
+# Watch mode (for the TDD enthusiasts)
+npm run test:watch
+
+# Fancy UI mode (because CLIs are so 2010)
+npm run test:ui
+
+# Coverage report (for the perfectionists)
+npm run test:coverage
+```
+
+### Building
+
+```bash
+npm run build
+```
+
+### Dev Mode
+
+```bash
+npm run dev
+```
+
+We figured, why not turn those instructions into code? Now you can:
+
+1. **Generate instructions dynamically** based on your server details
+2. **Keep instructions up-to-date** in one place
+3. **Programmatically display** them in your UI, docs, or CLI
+4. **Sleep better at night** knowing your users can actually connect to your server
+
+## 🎨 Use Cases
+
+- **Documentation sites**: Generate installation instructions dynamically
+- **CLI tools**: Display setup instructions when users run your tool
+- **Admin dashboards**: Show connection guides to end users
+- **Onboarding flows**: Step-by-step wizards for new users
+
+## 💡 Want to Add More Platforms?
+
+PRs are welcome! If there's another AI assistant or IDE that supports MCP servers, we'd love to add instructions for it.
+
+---
+
+Made by the [Zuplo team](https://zuplo.com) 💖 for [Zudoku](https://zudoku.com) & [Zuplo MCP Gateway](https://zuplo.com/docs/handlers/mcp-server).
