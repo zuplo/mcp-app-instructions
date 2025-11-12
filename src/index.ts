@@ -1,4 +1,4 @@
-type MCPConfiguration = {
+export type MCPConfiguration = {
   name: string;
   description?: string;
   officialDocsLink: string;
