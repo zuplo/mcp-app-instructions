@@ -3,6 +3,10 @@
   "version": "0.0.6",
   "description": "Provides instructions for adding or connecting various apps to an MCP server.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuplo/mcp-app-instructions"
+  },
   "files": [
     "dist"
   ],
