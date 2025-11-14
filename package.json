@@ -5,7 +5,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zuplo/mcp-app-instructions"
+    "url": "git+https://github.com/zuplo/mcp-app-instructions.git"
   },
   "files": [
     "dist"
