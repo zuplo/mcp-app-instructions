@@ -56,13 +56,12 @@ jobs:
           NEW_VERSION=$(node -p "require('./package.json').version")
           echo "New version: $NEW_VERSION"
           echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
-
-      - name: Publish to NPM
-        run: npm publish --provenance --access public
-
       - name: Push version bump
         run: |
           git push origin main --follow-tags
+
+      - name: Publish to NPM
+        run: npm publish --provenance --access public
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
